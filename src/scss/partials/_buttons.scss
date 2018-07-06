@@ -1,0 +1,15 @@
+.modal-button{
+  width: $m-button-w;
+  height: $m-button-h;
+  background-color: $color-gold;
+  border: none;
+  color: $color-black;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: $m-button-margin;
+
+  &__icon{
+    padding-left: 13px;
+  }
+}

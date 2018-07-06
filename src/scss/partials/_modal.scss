@@ -1,0 +1,24 @@
+.modal{
+
+  width: $modal-w;
+  height: $modal-h;
+  background-color: $color-black70;
+
+  &-wrapper{
+    width: $content-width;
+    margin: $modal-margin-top auto;
+  }
+
+  &__text{
+    color: $color-white;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    padding: $modal-text-padding;
+    margin: 0;
+
+    &--gold{
+      color: $color-gold;
+    }
+  }
+}
