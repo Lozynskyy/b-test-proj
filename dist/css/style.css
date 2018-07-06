@@ -390,3 +390,51 @@ template {
   margin: 26px 22px; }
   .modal-button__icon {
     padding-left: 13px; }
+
+.ff-button {
+  width: 137px;
+  height: 54px;
+  background-color: #db302c;
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px; }
+
+.find-franchise {
+  height: 130px;
+  background-color: #ffdd00;
+  display: flex;
+  align-items: center; }
+  .find-franchise__content {
+    width: 1114px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+  .find-franchise__text {
+    padding-left: 23px; }
+    .find-franchise__text__top {
+      color: #000000;
+      font-family: "Eurostile LT Std - Demi", sans-serif;
+      font-size: 38px;
+      font-weight: 400;
+      margin: 0; }
+    .find-franchise__text__bot {
+      color: #000000;
+      font-family: Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0; }
+
+.ff-input {
+  width: 241px;
+  height: 54px;
+  background-color: #ffffff;
+  border: 1px solid #b7b7b7;
+  padding: 0 0 0 18px;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 30px; }
+  .ff-input::placeholder {
+    color: #bababa; }
