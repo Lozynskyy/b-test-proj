@@ -425,6 +425,41 @@ template {
   .ff-input::placeholder {
     color: #bababa; }
 
+.my-slick {
+  width: 100%;
+  height: 224px; }
+  .my-slick__item__comment {
+    width: 100%;
+    background-color: #ffffff; }
+  .my-slick__item__text {
+    color: #000000;
+    font-family: "Helvetica", sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 24px 30px 24px 20px;
+    margin: 11px 0; }
+  .my-slick__item__com-author {
+    font-family: "Helvetica", sans-serif;
+    font-style: oblique;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: right;
+    margin: 0; }
+  .my-slick__dot {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 50%; }
+
+.slick-active .my-slick__dot {
+  background-color: #000000; }
+
 .find-franchise {
   height: 130px;
   background-color: #ffdd00;
@@ -569,3 +604,17 @@ template {
   .get-started__item__icon {
     width: 7px;
     padding-left: 12px; }
+
+.clients-comments {
+  height: 388px;
+  background-color: #f7f8f8; }
+  .clients-comments__content {
+    width: 1200px;
+    margin: 0 auto; }
+  .clients-comments__title {
+    color: #db302c;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    padding: 56px 0 2px; }
