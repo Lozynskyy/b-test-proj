@@ -301,6 +301,10 @@ template {
   font-family: "Eurostile LT Std - Demi";
   src: url(../../fonts/Eurostile-LT-Std-Demi_16310.ttf); }
 
+@font-face {
+  font-family: "Eurostile LT Std";
+  src: url(../../fonts/EurostileLTStd.otf); }
+
 .header__panel--top {
   background-color: #000000;
   height: 52px; }
@@ -412,6 +416,18 @@ template {
   font-weight: 700;
   margin: 34px auto; }
 
+.ln-button {
+  width: 238px;
+  height: 62px;
+  background-color: #ffdd00;
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  display: block;
+  margin: 27px auto 30px; }
+
 .ff-input {
   width: 241px;
   height: 54px;
@@ -459,6 +475,9 @@ template {
 
 .slick-active .my-slick__dot {
   background-color: #000000; }
+
+.slick-dots li {
+  margin: 0 1px !important; }
 
 .find-franchise {
   height: 130px;
@@ -618,3 +637,75 @@ template {
     font-weight: 400;
     text-align: center;
     padding: 56px 0 2px; }
+
+.latest-news__content {
+  width: 1200px;
+  margin: 0 auto; }
+
+.latest-news__title {
+  color: #db302c;
+  font-family: "Eurostile LT Std - Demi", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 0 20px 0; }
+
+.latest-news__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.latest-news__item {
+  width: 384px;
+  height: 638px;
+  border: 1px solid #e1e1e1;
+  position: relative; }
+  .latest-news__item__date {
+    width: 61px;
+    height: 61px;
+    background-color: #ffdd00;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .latest-news__item__date__month {
+      color: #000000;
+      font-family: "Eurostile LT Std", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 10px 14px 0;
+      display: block; }
+    .latest-news__item__date__day {
+      color: #000000;
+      font-family: "Eurostile LT Std - Demi", sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      padding: 0 12px;
+      display: block; }
+  .latest-news__item__title {
+    color: #000000;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 12px 13px 4px; }
+  .latest-news__item__short {
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 15px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e1e1e1; }
+  .latest-news__item__link {
+    color: #db302c;
+    text-decoration: none;
+    border-bottom: 1px solid; }
+  .latest-news__item__author {
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    display: block; }

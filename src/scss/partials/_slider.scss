@@ -44,3 +44,7 @@
 .slick-active .my-slick__dot{
   background-color: $color-black;
 }
+
+.slick-dots li {
+  margin: 0 1px !important;
+}
