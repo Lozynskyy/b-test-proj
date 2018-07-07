@@ -510,3 +510,62 @@ template {
     line-height: 23px;
     text-align: center;
     margin: 12px 0; }
+
+.get-started__content {
+  width: 1200px;
+  margin: 0 auto 50px; }
+
+.get-started__title {
+  color: #db302c;
+  font-family: "Eurostile LT Std - Demi", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 48px 0 5px 0; }
+
+.get-started__description {
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  width: 440px;
+  margin: 0 auto;
+  text-align: center; }
+
+.get-started__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; }
+
+.get-started__item {
+  width: 384px;
+  height: 244px;
+  display: flex;
+  align-items: flex-end; }
+  .get-started__item--1 {
+    background-image: url("../img/residential.png"); }
+  .get-started__item--2 {
+    background-image: url("../img/commercial.png"); }
+  .get-started__item--3 {
+    background-image: url("../img/insurance.png"); }
+  .get-started__item__title {
+    width: 100%;
+    height: 41px;
+    background-color: #ffdd00; }
+  .get-started__item__link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit; }
+  .get-started__item__text {
+    color: #000000;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 18px; }
+  .get-started__item__icon {
+    width: 7px;
+    padding-left: 12px; }
