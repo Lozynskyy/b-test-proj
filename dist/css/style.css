@@ -936,9 +936,54 @@ template {
   height: 1px;
   background-color: #d4d4d4; }
 
+.service__content {
+  width: 1200px;
+  margin: 27px auto 20px;
+  display: flex; }
+
+.service__info {
+  padding-left: 21px; }
+
+.service__title {
+  color: #db302c;
+  font-family: "Eurostile LT Std - Demi", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0; }
+
+.service__text {
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 11px 0; }
+
+.service::after {
+  content: "";
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #d4d4d4; }
+
+.service__image {
+  width: 100%;
+  height: 100%; }
+
 .header__bg-img--wwa {
   background-image: url("../img/wwa-bg.png");
   height: 264px; }
 
 .get-started__content--wwa {
   margin: 0 auto 30px; }
+
+.header__bg-img--w {
+  background-image: url("../img/w-bg.png");
+  height: 264px; }
+
+.services__content--w::after {
+  margin-top: 39px; }
+
+.services__title--w {
+  margin-top: 35px; }
