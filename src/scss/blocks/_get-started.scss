@@ -11,7 +11,7 @@
     font-size: 32px;
     font-weight: 400;
     text-align: center;
-    margin: 48px 0 5px 0;
+    margin: 50px 0 5px 0;
   }
 
   &__description{
@@ -75,6 +75,7 @@
     &__icon{
       width: 7px;
       padding-left: 12px;
+      padding-bottom: 3px;
     }
   }
 }
