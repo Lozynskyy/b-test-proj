@@ -428,6 +428,18 @@ template {
   display: block;
   margin: 27px auto 30px; }
 
+.cg-button {
+  width: 212px;
+  height: 62px;
+  background-color: #ffffff;
+  color: #db302c;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  display: block;
+  margin: 2px auto; }
+
 .ff-input {
   width: 241px;
   height: 54px;
@@ -440,6 +452,72 @@ template {
   margin-left: 30px; }
   .ff-input::placeholder {
     color: #bababa; }
+
+.cg-form__input {
+  width: 272px;
+  height: 37px;
+  background-color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  border: none;
+  padding-left: 10px; }
+  .cg-form__input::placeholder {
+    color: #ababab; }
+  .cg-form__input-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0; }
+
+.cg-form__select {
+  width: 100%;
+  height: 37px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  padding-left: 10px;
+  background-image: url("../img/polygon-1.png");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  margin: 0 0 22px 0; }
+
+.cg-form__textarea {
+  resize: none;
+  width: 578px;
+  height: 168px;
+  background-color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px 0 0 10px;
+  border: none;
+  margin: 0 0 18px 0; }
+  .cg-form__textarea::placeholder {
+    color: #ababab; }
+
+.cg-form__submit {
+  width: 122px;
+  height: 62px;
+  background-color: #ffffff;
+  color: #db302c;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 32px; }
 
 .my-slick {
   width: 100%;
@@ -709,3 +787,35 @@ template {
     text-transform: uppercase;
     padding: 14px 16px;
     display: block; }
+
+.contact-gallery {
+  background-color: #db302c; }
+  .contact-gallery__content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .contact-gallery__title {
+    color: #ffffff;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 42px 0 22px; }
+  .contact-gallery__description {
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 25px 0; }
+  .contact-gallery__contact {
+    width: 588px; }
+  .contact-gallery__gallery {
+    width: 576px; }
+    .contact-gallery__gallery__body {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+    .contact-gallery__gallery__item {
+      display: block;
+      margin-bottom: 20px; }
