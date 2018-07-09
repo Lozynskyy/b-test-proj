@@ -1,0 +1,52 @@
+.franchising{
+
+  &__content{
+    width: $content-width;
+    margin: 27px auto 20px;
+
+    &__head{
+      display: flex;
+    }
+  }
+
+  &__info{
+    padding-right: 18px;
+  }
+
+  &__title{
+    color: #db302c;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__text{
+    color: $color-black;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 11px 0 30px;
+
+    &__link{
+      color: #db302c;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    width: $content-width;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #d4d4d4;
+  }
+
+  &__image{
+    width: 593px;
+    height: 396px;
+  }
+}

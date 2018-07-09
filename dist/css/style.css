@@ -444,7 +444,11 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 10px; }
+  margin-left: 10px;
+  border: none; }
+  .ff-button--fr {
+    width: 243px;
+    height: 70px; }
 
 .services-button {
   display: block;
@@ -868,7 +872,17 @@ template {
   .contact-gallery__contact {
     width: 588px; }
     .contact-gallery__contact--short {
-      width: 540px; }
+      width: 540px;
+      position: relative; }
+    .contact-gallery__contact::after {
+      content: "";
+      display: block;
+      height: 394px;
+      width: 1px;
+      background-color: #e6534f;
+      position: absolute;
+      top: 30px;
+      right: -40px; }
   .contact-gallery__gallery {
     width: 576px; }
     .contact-gallery__gallery__body {
@@ -971,6 +985,46 @@ template {
   width: 100%;
   height: 100%; }
 
+.franchising__content {
+  width: 1200px;
+  margin: 27px auto 20px; }
+  .franchising__content__head {
+    display: flex; }
+
+.franchising__info {
+  padding-right: 18px; }
+
+.franchising__title {
+  color: #db302c;
+  font-family: "Eurostile LT Std - Demi", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0; }
+
+.franchising__text {
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 11px 0 30px; }
+  .franchising__text__link {
+    color: #db302c;
+    text-decoration: none;
+    border-bottom: 1px solid; }
+
+.franchising::after {
+  content: "";
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #d4d4d4; }
+
+.franchising__image {
+  width: 593px;
+  height: 396px; }
+
 .header__bg-img--wwa {
   background-image: url("../img/wwa-bg.png");
   height: 264px; }
@@ -987,3 +1041,14 @@ template {
 
 .services__title--w {
   margin-top: 35px; }
+
+.header__bg-img--fr {
+  background-image: url("../img/fr-bg.png");
+  height: 264px; }
+
+.find-franchise__content--fr {
+  width: 1200px;
+  justify-content: space-between; }
+
+.find-franchise__text--fr {
+  padding: 0; }

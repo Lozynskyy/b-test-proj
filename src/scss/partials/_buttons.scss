@@ -23,6 +23,12 @@
   font-size: 18px;
   font-weight: 700;
   margin-left: 10px;
+  border: none;
+
+  &--fr{
+    width: 243px;
+    height: 70px;
+  }
 }
 
 .services-button{

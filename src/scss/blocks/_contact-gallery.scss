@@ -36,6 +36,18 @@
 
     &--short{
       width: 540px;
+      position: relative;
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      height: 394px;
+      width: 1px;
+      background-color: #e6534f;
+      position: absolute;
+      top: 30px;
+      right: -40px;
     }
   }
 

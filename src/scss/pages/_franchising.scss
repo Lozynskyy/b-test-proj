@@ -1,0 +1,18 @@
+.header{
+  &__bg-img--fr{
+    background-image: url("../img/fr-bg.png");
+    height: 264px;
+  }
+}
+
+.find-franchise{
+
+  &__content--fr{
+    width: $content-width;
+    justify-content: space-between;
+  }
+
+  &__text--fr{
+    padding: 0;
+  }
+}
