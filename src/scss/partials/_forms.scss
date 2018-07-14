@@ -12,6 +12,17 @@
   &::placeholder{
     color: #bababa;
   }
+
+  @media (max-width: 800px) {
+    width: 150px;
+    height: 36px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 560px) {
+    margin-left: 0;
+  }
 }
 
 .cg-form{
@@ -31,6 +42,10 @@
 
     &::placeholder{
       color: #ababab;
+    }
+
+    @media (max-width: 1280px) {
+      width: 44%;
     }
 
     &-group{
@@ -76,6 +91,11 @@
     &::placeholder{
       color: #ababab;
     }
+
+    @media (max-width: 1280px) {
+      padding: 2%;
+      width: 96%;
+    }
   }
 
   &__submit{
@@ -90,5 +110,13 @@
     display: block;
     margin-left: auto;
     margin-bottom: 32px;
+    cursor: pointer;
+  }
+}
+
+.wpcf7-form{
+
+  & p{
+    margin: 0;
   }
 }

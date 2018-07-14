@@ -3,6 +3,10 @@
   &__content{
     width: $content-width;
     margin: 0 auto 50px;
+
+    @media (max-width: 1280px) {
+      width: 90%;
+    }
   }
 
   &__title{
@@ -23,12 +27,21 @@
     width: 440px;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 560px) {
+      display: none;
+    }
   }
 
   &__list{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item{
@@ -36,6 +49,23 @@
     height: 244px;
     display: flex;
     align-items: flex-end;
+
+    @media (max-width: 1280px) {
+      margin: 0 5px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 166px;
+      background-size: cover;
+    }
+
+    @media (max-width: 800px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 560px) {
+      width: 288px;
+    }
 
     &--1{
       background-image: url("../img/residential.png");

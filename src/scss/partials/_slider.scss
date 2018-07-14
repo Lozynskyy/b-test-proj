@@ -1,23 +1,23 @@
 .my-slick{
   width: 100%;
-  height: 224px;
 
   &__item{
+
     &__comment{
       width: 100%;
       background-color: $color-white;
+
+      & p{
+        color: #000000;
+        font-family: "Helvetica", sans-serif;
+        font-style: oblique;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 24px 30px
+      }
     }
 
-    &__text{
-      color: #000000;
-      font-family: "Helvetica", sans-serif;
-      font-style: oblique;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 26px;
-      padding: 24px 30px 24px 20px;
-      margin: 11px 0;
-    }
 
     &__com-author{
       font-family: "Helvetica", sans-serif;
@@ -28,6 +28,7 @@
       line-height: 19px;
       text-align: right;
       margin: 0;
+      padding-right: 3px;
     }
   }
 
@@ -47,4 +48,9 @@
 
 .slick-dots li {
   margin: 0 1px !important;
+}
+
+ul.slick-dots{
+  position: initial;
+  padding-bottom: 26px;
 }

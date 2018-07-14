@@ -1,0 +1,68 @@
+.all-services{
+
+  &__content{
+    width: $content-width;
+    margin: 0 auto;
+
+    &::after {
+      content: "";
+      display: block;
+      width: $content-width;
+      height: 1px;
+      background-color: #d4d4d4;
+    }
+  }
+
+  &__title{
+    color: #db302c;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin: 46px 0 5px 0;
+  }
+
+  &__description{
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__table{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    justify-content: space-between;
+  }
+
+  &__item{
+    width: 380px;
+    margin: 10px 0;
+
+    &__image{
+      width: 100%;
+    }
+
+    &__title{
+      text-align: center;
+      color: #000000;
+      font-family: "Eurostile LT Std - Demi", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    &__link{
+      color: inherit;
+      text-decoration: none;
+
+      &:hover{
+        color: #db302c;
+      }
+    }
+  }
+}

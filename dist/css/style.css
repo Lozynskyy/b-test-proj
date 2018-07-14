@@ -299,19 +299,25 @@ template {
 
 @font-face {
   font-family: "Eurostile LT Std - Demi";
-  src: url(../../fonts/Eurostile-LT-Std-Demi_16310.ttf); }
+  src: url(../fonts/Eurostile-LT-Std-Demi_16310.ttf); }
 
 @font-face {
   font-family: "Eurostile LT Std";
-  src: url(../../fonts/EurostileLTStd.otf); }
+  src: url(../fonts/EurostileLTStd.otf); }
 
 .header__panel--top {
   background-color: #000000;
   height: 52px; }
+  @media (max-width: 800px) {
+    .header__panel--top {
+      height: 100%; } }
 
 .header__panel--bottom {
   background-color: rgba(0, 0, 0, 0.6);
   height: 80px; }
+  @media (max-width: 800px) {
+    .header__panel--bottom {
+      height: 100px; } }
 
 .header__panel__content {
   width: 1200px;
@@ -319,6 +325,19 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 1280px) {
+    .header__panel__content {
+      width: 90%; } }
+  @media (max-width: 800px) {
+    .header__panel__content {
+      align-items: flex-start; } }
+  @media (max-width: 560px) {
+    .header__panel__content {
+      width: 98%; } }
+
+@media (max-width: 800px) {
+  .header__custom-element {
+    margin: 8px 0; } }
 
 .header__custom-element__link {
   text-decoration: none;
@@ -329,36 +348,102 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700; }
+  @media (max-width: 560px) {
+    .header__custom-element__text {
+      font-size: 12px; } }
 
 .header__custom-element__img {
   padding-left: 6px; }
+  @media (max-width: 560px) {
+    .header__custom-element__img {
+      padding-left: 0; } }
+
+.header__menu__burger_1 {
+  display: none;
+  text-align: right;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  width: 74px;
+  cursor: pointer;
+  margin: 8px 0 8px auto; }
+  @media (max-width: 800px) {
+    .header__menu__burger_1 {
+      display: block; } }
+
+.header__menu__burger_2 {
+  display: none;
+  text-align: right;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  width: 74px;
+  cursor: pointer;
+  margin: 8px 0 8px auto; }
+  @media (max-width: 800px) {
+    .header__menu__burger_2 {
+      display: block; } }
 
 .header__menu--main {
   width: 368px;
   font-size: 14px; }
+  @media (max-width: 800px) {
+    .header__menu--main {
+      width: auto; } }
 
 .header__menu--secondary {
   width: 906px;
   font-size: 16px; }
+  @media (max-width: 1280px) {
+    .header__menu--secondary {
+      width: 70%;
+      font-size: 14px; } }
+  @media (max-width: 800px) {
+    .header__menu--secondary {
+      width: auto; } }
 
 .header__menu__item-list {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 800px) {
+    .header__menu__item-list--main {
+      margin: 6px 38px 6px 0;
+      text-align: right;
+      display: none; } }
+  .header__menu__item-list--main.active {
+    display: block; }
+  @media (max-width: 800px) {
+    .header__menu__item-list--secondary {
+      display: none;
+      margin: 0;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 5px; } }
+  .header__menu__item-list--secondary.active {
+    display: block; }
 
 .header__menu__item {
-  display: inline-block; }
-
-.header__menu__link {
-  color: #ffffff;
-  text-decoration: none;
   font-family: Helvetica, sans-serif;
-  font-weight: 700; }
-  .header__menu__link:hover {
+  font-weight: 700;
+  display: inline-block;
+  color: #ffffff; }
+  @media (max-width: 1024px) {
+    .header__menu__item {
+      padding-left: 8px; } }
+  @media (max-width: 800px) {
+    .header__menu__item {
+      margin: 4px 0;
+      display: block; } }
+  .header__menu__item.active {
     color: #db302c; }
-  .header__menu__link.active {
+  .header__menu__item:hover {
     color: #db302c; }
+
+.header__menu a {
+  color: inherit;
+  text-decoration: none; }
 
 .header__logo {
   margin: 2px 0; }
@@ -368,10 +453,22 @@ template {
   background-size: cover;
   background-repeat: no-repeat;
   height: 590px; }
+  @media (max-width: 1024px) {
+    .header__bg-img {
+      height: 414px; } }
+  @media (max-width: 800px) {
+    .header__bg-img {
+      height: 236px; } }
+  @media (max-width: 560px) {
+    .header__bg-img {
+      height: 214px; } }
 
 .footer {
   height: 55px;
   background-color: #000000; }
+  @media (max-width: 560px) {
+    .footer {
+      height: 100px; } }
   .footer__content {
     height: 100%;
     width: 1200px;
@@ -380,13 +477,24 @@ template {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 1280px) {
+      .footer__content {
+        width: 90%; } }
+    @media (max-width: 800px) {
+      .footer__content {
+        flex-direction: column-reverse; } }
   .footer__copyright {
     color: #f7f8f8;
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 34px;
     margin: 0; }
+    @media (max-width: 1024px) {
+      .footer__copyright {
+        margin-right: 10px; } }
+    @media (max-width: 560px) {
+      .footer__copyright {
+        text-align: center; } }
     .footer__copyright__link {
       color: inherit; }
   .footer__menu__list {
@@ -396,6 +504,14 @@ template {
     width: 442px;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 1024px) {
+      .footer__menu__list {
+        width: 400px; } }
+    @media (max-width: 560px) {
+      .footer__menu__list {
+        width: 300px;
+        flex-wrap: wrap;
+        justify-content: space-evenly; } }
   .footer__menu__item {
     display: inline-block;
     font-family: Helvetica, sans-serif;
@@ -403,16 +519,29 @@ template {
     font-weight: 400;
     line-height: 34px;
     color: #f7f8f8; }
-  .footer__menu__link {
+  .footer__menu a {
     color: inherit; }
 
 .modal {
   width: 588px;
   height: 295px;
   background-color: rgba(0, 0, 0, 0.7); }
+  @media (max-width: 1024px) {
+    .modal {
+      width: 500px;
+      height: 214px; } }
   .modal-wrapper {
     width: 1200px;
     margin: 95px auto; }
+    @media (max-width: 800px) {
+      .modal-wrapper {
+        display: none; } }
+    @media (max-width: 1280px) {
+      .modal-wrapper {
+        width: 90%; } }
+    @media (max-width: 1024px) {
+      .modal-wrapper {
+        margin: 50px auto; } }
   .modal__text {
     color: #ffffff;
     font-family: "Eurostile LT Std - Demi", sans-serif;
@@ -420,19 +549,28 @@ template {
     font-weight: 400;
     padding: 63px 70px 0 30px;
     margin: 0; }
-    .modal__text--gold {
+    @media (max-width: 1024px) {
+      .modal__text {
+        padding: 26px 50px 10px 20px;
+        font-size: 30px; } }
+    .modal__text span {
       color: #ffdd00; }
 
 .modal-button {
   width: 205px;
   height: 57px;
   background-color: #ffdd00;
-  border: none;
   color: #000000;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 26px 22px; }
+  margin: 26px 22px;
+  cursor: pointer;
+  padding: 0;
+  border: none; }
+  @media (max-width: 1024px) {
+    .modal-button {
+      margin: 0 20px; } }
   .modal-button__icon {
     padding-left: 13px; }
 
@@ -445,10 +583,20 @@ template {
   font-size: 18px;
   font-weight: 700;
   margin-left: 10px;
+  cursor: pointer;
+  padding: 0;
   border: none; }
   .ff-button--fr {
     width: 243px;
     height: 70px; }
+  @media (max-width: 800px) {
+    .ff-button {
+      min-width: 62px;
+      height: 36px;
+      font-size: 14px; } }
+  @media (max-width: 560px) {
+    .ff-button {
+      width: 100px; } }
 
 .services-button {
   display: block;
@@ -459,7 +607,10 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 34px auto; }
+  margin: 34px auto;
+  cursor: pointer;
+  padding: 0;
+  border: none; }
 
 .ln-button {
   width: 238px;
@@ -469,9 +620,11 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  border: none;
   display: block;
-  margin: 27px auto 30px; }
+  margin: 27px auto 30px;
+  cursor: pointer;
+  padding: 0;
+  border: none; }
 
 .cg-button {
   width: 212px;
@@ -481,20 +634,36 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  border: none;
   display: block;
-  margin: 2px auto; }
+  margin: 2px auto;
+  cursor: pointer;
+  padding: 0;
+  border: none; }
+  @media (max-width: 1024px) {
+    .cg-button {
+      margin-bottom: 20px; } }
 
 .cg-contact-button {
   width: 386px;
   height: 62px;
   background-color: #ffffff;
-  border: none;
   color: #db302c;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding: 0;
+  border: none; }
+
+.button__link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .ff-input {
   width: 241px;
@@ -508,6 +677,15 @@ template {
   margin-left: 30px; }
   .ff-input::placeholder {
     color: #bababa; }
+  @media (max-width: 800px) {
+    .ff-input {
+      width: 150px;
+      height: 36px;
+      margin-left: 10px;
+      font-size: 14px; } }
+  @media (max-width: 560px) {
+    .ff-input {
+      margin-left: 0; } }
 
 .cg-form__input {
   width: 272px;
@@ -523,6 +701,9 @@ template {
   padding-left: 10px; }
   .cg-form__input::placeholder {
     color: #ababab; }
+  @media (max-width: 1280px) {
+    .cg-form__input {
+      width: 44%; } }
   .cg-form__input-group {
     display: flex;
     justify-content: space-between;
@@ -561,6 +742,10 @@ template {
   margin: 0 0 18px 0; }
   .cg-form__textarea::placeholder {
     color: #ababab; }
+  @media (max-width: 1280px) {
+    .cg-form__textarea {
+      padding: 2%;
+      width: 96%; } }
 
 .cg-form__submit {
   width: 122px;
@@ -573,23 +758,25 @@ template {
   border: none;
   display: block;
   margin-left: auto;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  cursor: pointer; }
+
+.wpcf7-form p {
+  margin: 0; }
 
 .my-slick {
-  width: 100%;
-  height: 224px; }
+  width: 100%; }
   .my-slick__item__comment {
     width: 100%;
     background-color: #ffffff; }
-  .my-slick__item__text {
-    color: #000000;
-    font-family: "Helvetica", sans-serif;
-    font-style: oblique;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    padding: 24px 30px 24px 20px;
-    margin: 11px 0; }
+    .my-slick__item__comment p {
+      color: #000000;
+      font-family: "Helvetica", sans-serif;
+      font-style: oblique;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      padding: 24px 30px; }
   .my-slick__item__com-author {
     font-family: "Helvetica", sans-serif;
     font-style: oblique;
@@ -598,7 +785,8 @@ template {
     font-weight: 400;
     line-height: 19px;
     text-align: right;
-    margin: 0; }
+    margin: 0;
+    padding-right: 3px; }
   .my-slick__dot {
     width: 14px;
     height: 14px;
@@ -613,6 +801,10 @@ template {
 .slick-dots li {
   margin: 0 1px !important; }
 
+ul.slick-dots {
+  position: initial;
+  padding-bottom: 26px; }
+
 .find-franchise {
   height: 130px;
   background-color: #ffdd00;
@@ -623,30 +815,81 @@ template {
     margin: 0 auto;
     display: flex;
     align-items: center; }
+    @media (max-width: 1280px) {
+      .find-franchise__content {
+        width: 90%; } }
+    @media (max-width: 800px) {
+      .find-franchise__content {
+        width: 96%; } }
+    @media (max-width: 560px) {
+      .find-franchise__content {
+        flex-direction: column; } }
+    .find-franchise__content__item {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 1280px) {
+        .find-franchise__content__item--right {
+          width: 48%; } }
+      @media (max-width: 560px) {
+        .find-franchise__content__item--right {
+          width: auto; } }
+      @media (max-width: 560px) {
+        .find-franchise__content__item--left {
+          margin-bottom: 10px; } }
   .find-franchise__text {
     padding-left: 23px; }
+    @media (max-width: 800px) {
+      .find-franchise__text {
+        padding-left: 10px; } }
     .find-franchise__text__top {
       color: #000000;
       font-family: "Eurostile LT Std - Demi", sans-serif;
       font-size: 38px;
       font-weight: 400;
       margin: 0; }
+      @media (max-width: 1280px) {
+        .find-franchise__text__top {
+          font-size: 36px; } }
+      @media (max-width: 1024px) {
+        .find-franchise__text__top {
+          font-size: 32px; } }
+      @media (max-width: 800px) {
+        .find-franchise__text__top {
+          font-size: 28px; } }
+      @media (max-width: 560px) {
+        .find-franchise__text__top {
+          font-size: 18px; } }
     .find-franchise__text__bot {
       color: #000000;
       font-family: Helvetica, sans-serif;
       font-size: 16px;
       font-weight: 700;
       margin: 0; }
+      @media (max-width: 1024px) {
+        .find-franchise__text__bot {
+          font-size: 14px; } }
+      @media (max-width: 800px) {
+        .find-franchise__text__bot {
+          font-size: 12px; } }
+      @media (max-width: 560px) {
+        .find-franchise__text__bot {
+          display: none; } }
 
 .services__content {
   width: 1200px;
   margin: 0 auto; }
+  @media (max-width: 1280px) {
+    .services__content {
+      width: 90%; } }
   .services__content::after {
     content: "";
     display: block;
     width: 1200px;
     height: 1px;
     background-color: #d4d4d4; }
+    @media (max-width: 1280px) {
+      .services__content::after {
+        width: 100%; } }
 
 .services__title {
   color: #db302c;
@@ -665,15 +908,24 @@ template {
   width: 440px;
   margin: 0 auto;
   text-align: center; }
+  @media (max-width: 560px) {
+    .services__description {
+      display: none; } }
 
 .services__table {
   display: flex;
   flex-wrap: wrap;
   margin-top: 32px; }
+  @media (max-width: 1280px) {
+    .services__table {
+      justify-content: space-evenly; } }
 
 .services__item {
   width: 384px;
   padding: 13px 8px; }
+  @media (max-width: 1024px) {
+    .services__item {
+      width: 344px; } }
   .services__item__icon__circle {
     width: 87px;
     height: 87px;
@@ -698,10 +950,28 @@ template {
     line-height: 23px;
     text-align: center;
     margin: 12px 0; }
+    @media (max-width: 560px) {
+      .services__item__description {
+        display: none; } }
+  .services__item__link {
+    text-decoration: none;
+    color: inherit; }
+    .services__item__link:hover {
+      color: #db302c; }
+    .services__item__link--image {
+      width: 87px;
+      height: 87px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%; }
 
 .get-started__content {
   width: 1200px;
   margin: 0 auto 50px; }
+  @media (max-width: 1280px) {
+    .get-started__content {
+      width: 90%; } }
 
 .get-started__title {
   color: #db302c;
@@ -720,17 +990,37 @@ template {
   width: 440px;
   margin: 0 auto;
   text-align: center; }
+  @media (max-width: 560px) {
+    .get-started__description {
+      display: none; } }
 
 .get-started__list {
   display: flex;
   justify-content: space-between;
   margin-top: 20px; }
+  @media (max-width: 800px) {
+    .get-started__list {
+      flex-direction: column;
+      align-items: center; } }
 
 .get-started__item {
   width: 384px;
   height: 244px;
   display: flex;
   align-items: flex-end; }
+  @media (max-width: 1280px) {
+    .get-started__item {
+      margin: 0 5px; } }
+  @media (max-width: 1024px) {
+    .get-started__item {
+      height: 166px;
+      background-size: cover; } }
+  @media (max-width: 800px) {
+    .get-started__item {
+      margin-bottom: 20px; } }
+  @media (max-width: 560px) {
+    .get-started__item {
+      width: 288px; } }
   .get-started__item--1 {
     background-image: url("../img/residential.png"); }
   .get-started__item--2 {
@@ -760,11 +1050,13 @@ template {
     padding-bottom: 3px; }
 
 .clients-comments {
-  height: 388px;
   background-color: #f7f8f8; }
   .clients-comments__content {
     width: 1200px;
     margin: 0 auto; }
+    @media (max-width: 1280px) {
+      .clients-comments__content {
+        width: 90%; } }
   .clients-comments__title {
     color: #db302c;
     font-family: "Eurostile LT Std - Demi", sans-serif;
@@ -776,6 +1068,9 @@ template {
 .latest-news__content {
   width: 1200px;
   margin: 0 auto; }
+  @media (max-width: 1280px) {
+    .latest-news__content {
+      width: 90%; } }
 
 .latest-news__title {
   color: #db302c;
@@ -789,12 +1084,33 @@ template {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between; }
+  @media (max-width: 800px) {
+    .latest-news__list {
+      flex-direction: column;
+      align-items: center; } }
 
 .latest-news__item {
   width: 384px;
-  height: 638px;
   border: 1px solid #e1e1e1;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (max-width: 1280px) {
+    .latest-news__item {
+      margin-right: 10px; } }
+  @media (max-width: 800px) {
+    .latest-news__item {
+      margin-right: 0;
+      margin-bottom: 20px; } }
+  @media (max-width: 560px) {
+    .latest-news__item {
+      width: 288px; } }
+  @media (max-width: 1280px) {
+    .latest-news__item:last-child {
+      margin-right: 0; } }
+  .latest-news__item__image {
+    width: 100%; }
   .latest-news__item__date {
     width: 61px;
     height: 61px;
@@ -830,8 +1146,7 @@ template {
     font-weight: 400;
     line-height: 24px;
     padding: 0 15px 20px;
-    margin: 0;
-    border-bottom: 1px solid #e1e1e1; }
+    margin: 0; }
   .latest-news__item__link {
     color: #db302c;
     text-decoration: none;
@@ -843,21 +1158,32 @@ template {
     font-weight: 700;
     text-transform: uppercase;
     padding: 14px 16px;
-    display: block; }
+    display: block;
+    border-top: 1px solid #e1e1e1; }
 
 .contact-gallery {
-  background-color: #db302c; }
+  background-color: #db302c;
+  min-height: 454px; }
   .contact-gallery__content {
     width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 1280px) {
+      .contact-gallery__content {
+        width: 90%; } }
+    @media (max-width: 800px) {
+      .contact-gallery__content {
+        flex-direction: column; } }
   .contact-gallery__title {
     color: #ffffff;
     font-family: "Eurostile LT Std - Demi", sans-serif;
     font-size: 32px;
     font-weight: 400;
     margin: 42px 0 22px; }
+    @media (max-width: 800px) {
+      .contact-gallery__title {
+        text-align: center; } }
   .contact-gallery__description {
     color: #ffffff;
     font-family: Helvetica, sans-serif;
@@ -865,34 +1191,64 @@ template {
     font-weight: 400;
     line-height: 24px;
     margin: 0 0 25px 0; }
+    @media (max-width: 560px) {
+      .contact-gallery__description {
+        display: none; } }
     .contact-gallery__description__link {
       color: inherit;
       text-decoration: none;
       border-bottom: 1px solid; }
   .contact-gallery__contact {
     width: 588px; }
+    @media (max-width: 1280px) {
+      .contact-gallery__contact {
+        margin-right: 10px;
+        width: 50%; } }
+    @media (max-width: 800px) {
+      .contact-gallery__contact {
+        width: 100%;
+        margin: 0; } }
     .contact-gallery__contact--short {
       width: 540px;
       position: relative; }
-    .contact-gallery__contact::after {
-      content: "";
-      display: block;
-      height: 394px;
-      width: 1px;
-      background-color: #e6534f;
-      position: absolute;
-      top: 30px;
-      right: -40px; }
+      .contact-gallery__contact--short::after {
+        content: "";
+        display: block;
+        height: 394px;
+        width: 1px;
+        background-color: #e6534f;
+        position: absolute;
+        top: 30px;
+        right: -40px; }
   .contact-gallery__gallery {
     width: 576px; }
+    @media (max-width: 1280px) {
+      .contact-gallery__gallery {
+        margin-left: 10px;
+        width: 50%; } }
+    @media (max-width: 800px) {
+      .contact-gallery__gallery {
+        width: 100%;
+        margin: 0; } }
     .contact-gallery__gallery__body {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      align-items: center; }
     .contact-gallery__gallery__item {
       display: block;
       margin-bottom: 20px;
-      border: 1px solid #ffffff; }
+      border: 1px solid #ffffff;
+      max-width: 130px; }
+      @media (max-width: 1280px) {
+        .contact-gallery__gallery__item {
+          margin-right: 10px; } }
+      @media (max-width: 1024px) {
+        .contact-gallery__gallery__item {
+          max-width: 162px; } }
+      @media (max-width: 560px) {
+        .contact-gallery__gallery__item {
+          max-width: 100%; } }
 
 .breadcrumb__content {
   width: 1200px;
@@ -919,36 +1275,39 @@ template {
 .breadcrumb__next-sign {
   padding: 0 13px; }
 
-.who-we-are__content {
+.page__content {
   width: 1200px;
   margin: 27px auto 50px;
-  display: flex; }
+  min-height: 331px;
+  display: block; }
 
-.who-we-are__info {
-  padding-left: 24px; }
-
-.who-we-are__title {
+.page__title {
   color: #db302c;
   font-family: "Eurostile LT Std - Demi", sans-serif;
   font-size: 34px;
   font-weight: 400;
   margin: 0; }
 
-.who-we-are__text {
+.page p {
   color: #000000;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
-  margin: 11px 0; }
+  margin: 11px 0 24px; }
 
-.who-we-are::after {
+.page::after {
   content: "";
   display: block;
   width: 1200px;
   margin: 0 auto;
   height: 1px;
   background-color: #d4d4d4; }
+
+.page__image {
+  max-width: 530px;
+  float: left;
+  margin-right: 24px; }
 
 .service__content {
   width: 1200px;
@@ -965,13 +1324,13 @@ template {
   font-weight: 400;
   margin: 0; }
 
-.service__text {
+.service p {
   color: #000000;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
-  margin: 11px 0; }
+  margin: 11px 0 24px; }
 
 .service::after {
   content: "";
@@ -982,7 +1341,7 @@ template {
   background-color: #d4d4d4; }
 
 .service__image {
-  width: 100%;
+  max-width: 535px;
   height: 100%; }
 
 .franchising__content {
@@ -1024,6 +1383,183 @@ template {
 .franchising__image {
   width: 593px;
   height: 396px; }
+
+.all-services__content {
+  width: 1200px;
+  margin: 0 auto; }
+  .all-services__content::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: #d4d4d4; }
+
+.all-services__title {
+  color: #db302c;
+  font-family: "Eurostile LT Std - Demi", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 46px 0 5px 0; }
+
+.all-services__description {
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  width: 440px;
+  margin: 0 auto;
+  text-align: center; }
+
+.all-services__table {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  justify-content: space-between; }
+
+.all-services__item {
+  width: 380px;
+  margin: 10px 0; }
+  .all-services__item__image {
+    width: 100%; }
+  .all-services__item__title {
+    text-align: center;
+    color: #000000;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 20px;
+    font-weight: 400; }
+  .all-services__item__link {
+    color: inherit;
+    text-decoration: none; }
+    .all-services__item__link:hover {
+      color: #db302c; }
+
+.gallery__content {
+  width: 1200px;
+  margin: 0 auto; }
+  .gallery__content::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: #d4d4d4; }
+
+.gallery__title {
+  color: #db302c;
+  font-family: "Eurostile LT Std - Demi", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 46px 0 5px 0; }
+
+.gallery__description {
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  width: 440px;
+  margin: 0 auto;
+  text-align: center; }
+
+.gallery__table {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  justify-content: space-between;
+  align-items: center; }
+
+.gallery__item {
+  width: 380px;
+  margin: 10px 0; }
+  .gallery__item__image {
+    width: 100%; }
+
+.gallery-single__content {
+  width: 1200px;
+  margin: 0 auto; }
+
+.gallery-single__image {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 90%; }
+
+.blog__content {
+  width: 1200px;
+  margin: 0 auto; }
+
+.blog__title {
+  color: #db302c;
+  font-family: "Eurostile LT Std - Demi", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 0 20px 0; }
+
+.blog__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.blog__item {
+  border: 1px solid #e1e1e1;
+  position: relative;
+  display: flex;
+  margin: 10px 0; }
+  .blog__item__image {
+    width: 384px; }
+  .blog__item__date {
+    width: 61px;
+    height: 61px;
+    background-color: #ffdd00;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .blog__item__date__month {
+      color: #000000;
+      font-family: "Eurostile LT Std", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 10px 14px 0;
+      display: block; }
+    .blog__item__date__day {
+      color: #000000;
+      font-family: "Eurostile LT Std - Demi", sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      padding: 0 12px;
+      display: block; }
+  .blog__item__info {
+    height: 300px; }
+  .blog__item__title {
+    color: #000000;
+    font-family: "Eurostile LT Std - Demi", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 12px 13px 4px; }
+  .blog__item__short {
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 15px 20px;
+    margin: 0; }
+  .blog__item__link {
+    color: #db302c;
+    text-decoration: none;
+    border-bottom: 1px solid; }
+  .blog__item__author {
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    display: block; }
 
 .header__bg-img--wwa {
   background-image: url("../img/wwa-bg.png");
