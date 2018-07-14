@@ -4,6 +4,10 @@
     width: $content-width;
     margin: 17px auto 0;
 
+    @media (max-width: 1280px) {
+      width: 90%;
+    }
+
     &::after{
       content: "";
       display: block;
