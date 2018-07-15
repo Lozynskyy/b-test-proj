@@ -770,6 +770,75 @@ template {
   margin-bottom: 32px;
   cursor: pointer; }
 
+.contact-form__input {
+  width: 96%;
+  padding-left: 4%;
+  height: 37px;
+  background-color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  border: 1px solid #000000; }
+  .contact-form__input::placeholder {
+    color: #ababab; }
+  .contact-form__input-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0; }
+  .contact-form__input__wrapper {
+    width: 48%; }
+
+.contact-form__select {
+  width: 100%;
+  height: 37px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  padding-left: 10px;
+  background-image: url("../img/polygon-1.png");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  margin: 0 0 22px 0; }
+
+.contact-form__textarea {
+  resize: none;
+  height: 168px;
+  background-color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid #000000;
+  margin: 0 0 18px 0;
+  padding: 2%;
+  width: 96%; }
+  .contact-form__textarea::placeholder {
+    color: #ababab; }
+
+.contact-form__submit {
+  width: 122px;
+  height: 62px;
+  background-color: #db302c;
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 32px;
+  cursor: pointer; }
+
 .wpcf7-form p {
   margin: 0; }
 
@@ -1549,6 +1618,9 @@ ul.slick-dots {
     width: 1200px;
     height: 1px;
     background-color: #d4d4d4; }
+    @media (max-width: 1280px) {
+      .gallery__content::after {
+        width: 90%; } }
 
 .gallery__title {
   color: #db302c;
@@ -1697,6 +1769,12 @@ ul.slick-dots {
 .header__bg-img--wwa {
   background-image: url("../img/wwa-bg.png");
   height: 264px; }
+  @media (max-width: 800px) {
+    .header__bg-img--wwa {
+      height: 236px; } }
+  @media (max-width: 560px) {
+    .header__bg-img--wwa {
+      height: 214px; } }
 
 .get-started__content--wwa {
   margin: 0 auto 30px; }
@@ -1704,6 +1782,12 @@ ul.slick-dots {
 .header__bg-img--w {
   background-image: url("../img/w-bg.png");
   height: 264px; }
+  @media (max-width: 800px) {
+    .header__bg-img--w {
+      height: 236px; } }
+  @media (max-width: 560px) {
+    .header__bg-img--w {
+      height: 214px; } }
 
 .services__content--w::after {
   margin-top: 39px; }
@@ -1714,6 +1798,12 @@ ul.slick-dots {
 .header__bg-img--fr {
   background-image: url("../img/fr-bg.png");
   height: 264px; }
+  @media (max-width: 800px) {
+    .header__bg-img--fr {
+      height: 236px; } }
+  @media (max-width: 560px) {
+    .header__bg-img--fr {
+      height: 214px; } }
 
 .find-franchise__content--fr {
   width: 1200px;

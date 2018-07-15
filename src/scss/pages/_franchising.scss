@@ -2,6 +2,14 @@
   &__bg-img--fr{
     background-image: url("../img/fr-bg.png");
     height: 264px;
+
+    @media (max-width: 800px) {
+      height: 236px;
+    }
+
+    @media (max-width: 560px) {
+      height: 214px;
+    }
   }
 }
 
