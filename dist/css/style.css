@@ -1594,6 +1594,9 @@ ul.slick-dots {
 .gallery-single__content {
   width: 1200px;
   margin: 0 auto; }
+  @media (max-width: 1280px) {
+    .gallery-single__content {
+      width: 90%; } }
 
 .gallery-single__image {
   display: block;
