@@ -1365,6 +1365,12 @@ ul.slick-dots {
   width: 1200px;
   margin: 27px auto 20px;
   display: flex; }
+  @media (max-width: 1280px) {
+    .service__content {
+      width: 90%; } }
+  @media (max-width: 800px) {
+    .service__content {
+      flex-direction: column; } }
 
 .service__info {
   padding-left: 21px; }
@@ -1375,6 +1381,10 @@ ul.slick-dots {
   font-size: 34px;
   font-weight: 400;
   margin: 0; }
+  @media (max-width: 800px) {
+    .service__title {
+      margin-top: 10px;
+      text-align: center; } }
 
 .service p {
   color: #000000;
@@ -1394,7 +1404,19 @@ ul.slick-dots {
 
 .service__image {
   max-width: 535px;
-  height: 100%; }
+  height: auto; }
+  @media (max-width: 1024px) {
+    .service__image {
+      max-width: 400px;
+      width: 400px; } }
+  @media (max-width: 800px) {
+    .service__image {
+      width: 100%;
+      margin: 0 auto;
+      display: block; } }
+  @media (max-width: 800px) {
+    .service__image__wrapper {
+      width: 100%; } }
 
 .franchising__content {
   width: 1200px;
