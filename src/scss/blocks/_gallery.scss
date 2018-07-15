@@ -4,6 +4,10 @@
     width: $content-width;
     margin: 0 auto;
 
+    @media (max-width: 1280px) {
+      width: 90%;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -39,11 +43,24 @@
     margin-top: 32px;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1280px) {
+      justify-content: space-around;
+    }
   }
 
   &__item{
     width: 380px;
     margin: 10px 0;
+
+    @media (max-width: 1280px) {
+      width: 400px;
+      margin: 10px;
+    }
+
+    @media (max-width: 800px) {
+      width: 90%;
+    }
 
     &__image{
       width: 100%;
