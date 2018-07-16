@@ -162,6 +162,7 @@
       font-family: Helvetica, sans-serif;
       font-weight: 700;
       display: inline-block;
+      position: relative;
       color: $color-white;
 
       @media (max-width: 1024px) {
@@ -179,6 +180,15 @@
 
       &:hover{
         color: #db302c;
+      }
+
+      &--sub{
+        &:hover{
+
+          & .sub-menu{
+            display: block;
+          }
+        }
       }
     }
 
@@ -208,6 +218,32 @@
 
     @media (max-width: 560px) {
       height: 214px;
+    }
+  }
+}
+
+.sub-menu{
+  width: 160px;
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  border: none;
+  background: #ffffff;
+  left: -80px;
+  bottom: -36px;
+  z-index: 1;
+
+  & li{
+    padding: 10px;
+    color: $color-black;
+
+    &:hover{
+      color: #db302c;
+    }
+
+    &.active{
+      color: #db302c;
     }
   }
 }

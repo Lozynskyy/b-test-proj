@@ -37,6 +37,16 @@
   &--fr{
     width: 243px;
     height: 70px;
+
+    @media (max-width: 800px) {
+      min-width: auto !important;
+      height: 70px !important;
+      font-size: 18px !important;
+    }
+
+    @media (max-width: 560px) {
+      width: 243px !important;
+    }
   }
 
   @media (max-width: 800px) {

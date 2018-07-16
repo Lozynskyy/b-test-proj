@@ -4,13 +4,9 @@
     width: $content-width;
     margin: 27px auto 20px;
 
-    &__head{
-      display: flex;
+    @media (max-width: 1280px) {
+      width: 90%;
     }
-  }
-
-  &__info{
-    padding-right: 18px;
   }
 
   &__title{
@@ -27,7 +23,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
-    margin: 11px 0 30px;
+    margin: 4px 0 18px;
 
     &__link{
       color: #db302c;
@@ -36,17 +32,21 @@
     }
   }
 
-  &::after{
-    content: "";
-    display: block;
-    width: $content-width;
-    margin: 0 auto;
-    height: 1px;
-    background-color: #d4d4d4;
-  }
-
   &__image{
     width: 593px;
-    height: 396px;
+    height: auto;
+    margin: 0 0 18px 18px;
+    float: right;
+
+    @media (max-width: 1024px) {
+      width: 470px;
+    }
+
+    @media (max-width: 800px) {
+      float: none;
+      margin: 0 0 20px;
+      width: auto;
+      max-width: 100%;
+    }
   }
 }
