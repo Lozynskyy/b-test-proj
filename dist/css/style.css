@@ -340,8 +340,10 @@ template {
     margin: 8px 0; } }
 
 .header__custom-element__link {
-  text-decoration: none;
-  color: inherit; }
+  text-decoration: none; }
+  .header__custom-element__link:hover {
+    text-decoration: underline;
+    color: #ffdd00; }
 
 .header__custom-element__text {
   color: #ffdd00;
@@ -355,7 +357,8 @@ template {
       font-size: 12px; } }
 
 .header__custom-element__img {
-  padding-left: 6px; }
+  padding-left: 6px;
+  fill: #ffdd00; }
   @media (max-width: 560px) {
     .header__custom-element__img {
       padding-left: 0; } }
@@ -563,7 +566,7 @@ template {
       height: 214px; } }
   .modal-wrapper {
     width: 1200px;
-    margin: 95px auto; }
+    margin: 94px auto; }
     @media (max-width: 800px) {
       .modal-wrapper {
         display: none; } }
@@ -578,8 +581,9 @@ template {
     font-family: "Eurostile LT Std - Demi", sans-serif;
     font-size: 34px;
     font-weight: 400;
-    padding: 63px 70px 0 30px;
-    margin: 0; }
+    padding: 63px 70px 0 29px;
+    margin: 0;
+    line-height: 40px; }
     @media (max-width: 1024px) {
       .modal__text {
         padding: 26px 50px 10px 20px;
@@ -588,22 +592,27 @@ template {
       color: #ffdd00; }
 
 .modal-button {
-  width: 205px;
-  height: 57px;
+  width: 202px;
+  height: 54px;
   background-color: #ffdd00;
   color: #000000;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 26px 22px;
+  margin: 22px 21px;
   cursor: pointer;
   padding: 0;
-  border: none; }
+  border: none;
+  transition: background-color 0.5s, color 0.5s, fill 0.5s; }
+  .modal-button:hover {
+    background-color: #db302c;
+    color: #ffffff;
+    fill: #ffffff; }
   @media (max-width: 1024px) {
     .modal-button {
       margin: 0 20px; } }
   .modal-button__icon {
-    padding-left: 13px; }
+    padding-left: 10px; }
 
 .ff-button {
   width: 137px;
