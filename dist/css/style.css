@@ -433,7 +433,8 @@ template {
   font-weight: 700;
   display: inline-block;
   position: relative;
-  color: #ffffff; }
+  color: #ffffff;
+  transition: color 0.5s; }
   @media (max-width: 1024px) {
     .header__menu__item {
       padding-left: 8px; } }
@@ -453,7 +454,9 @@ template {
   text-decoration: none; }
 
 .header__logo {
-  margin: 2px 0; }
+  margin: 4px 0 0;
+  max-width: 198px;
+  max-height: 73px; }
 
 .header__bg-img {
   background-image: url("../img/main-bg-img.png");
