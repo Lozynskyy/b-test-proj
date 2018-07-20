@@ -238,8 +238,10 @@
   border: none;
   background: #ffffff;
   left: -80px;
-  bottom: -36px;
+  bottom: -44px;
   z-index: 1;
+  border: 1px solid black;
+  border-top: 10px solid black;
 
   & li{
     padding: 10px;
