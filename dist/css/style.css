@@ -603,6 +603,7 @@ template {
   cursor: pointer;
   padding: 0;
   border: none;
+  outline: none;
   transition: background-color 0.5s, color 0.5s, fill 0.5s; }
   .modal-button:hover {
     background-color: #db302c;
@@ -626,7 +627,8 @@ template {
   cursor: pointer;
   padding: 0;
   border: 1px solid #db302c;
-  transition: background-color 0.5s, color 0.5s; }
+  transition: background-color 0.5s, color 0.5s;
+  outline: none; }
   .ff-button:hover {
     background-color: #ffffff;
     color: #db302c; }
@@ -663,7 +665,8 @@ template {
   cursor: pointer;
   padding: 0;
   border: none;
-  transition: color 0.5s, background-color 0.5s; }
+  transition: color 0.5s, background-color 0.5s;
+  outline: none; }
   .services-button:hover {
     background-color: #db302c;
     color: #ffffff; }
@@ -680,7 +683,12 @@ template {
   margin: 27px auto 30px;
   cursor: pointer;
   padding: 0;
-  border: none; }
+  border: none;
+  outline: none;
+  transition: color .5s, background-color .5s; }
+  .ln-button:hover {
+    background-color: #db302c;
+    color: #ffffff; }
 
 .cg-button {
   width: 212px;
@@ -694,7 +702,12 @@ template {
   margin: 2px auto;
   cursor: pointer;
   padding: 0;
-  border: none; }
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: color .5s, background-color .5s; }
+  .cg-button:hover {
+    background-color: #db302c;
+    color: #ffffff; }
   @media (max-width: 1024px) {
     .cg-button {
       margin-bottom: 20px; } }
@@ -710,7 +723,8 @@ template {
   margin-bottom: 20px;
   cursor: pointer;
   padding: 0;
-  border: none; }
+  border: none;
+  outline: none; }
   @media (max-width: 800px) {
     .cg-contact-button {
       display: block;
@@ -761,7 +775,8 @@ template {
   line-height: 24px;
   color: #000000;
   border: none;
-  padding-left: 10px; }
+  padding: 0 0 0 10px;
+  outline: none; }
   .cg-form__input::placeholder {
     color: #ababab; }
   @media (max-width: 1280px) {
@@ -771,7 +786,7 @@ template {
   .cg-form__input-group {
     display: flex;
     justify-content: space-between;
-    margin: 22px 0; }
+    margin: 24px 0; }
   .cg-form__input__wrapper {
     width: 48%; }
 
@@ -791,7 +806,9 @@ template {
   background-image: url("../img/polygon-1.png");
   background-position: 98% 50%;
   background-repeat: no-repeat;
-  margin: 0 0 22px 0; }
+  margin: 0 0 24px 0;
+  outline: none;
+  cursor: pointer; }
 
 .cg-form__textarea {
   resize: none;
@@ -805,7 +822,8 @@ template {
   line-height: 24px;
   padding: 10px 0 0 10px;
   border: none;
-  margin: 0 0 18px 0; }
+  margin: 0 0 21px 0;
+  outline: none; }
   .cg-form__textarea::placeholder {
     color: #ababab; }
   @media (max-width: 1280px) {
@@ -821,11 +839,16 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  border: none;
   display: block;
   margin-left: auto;
   margin-bottom: 32px;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: color .5s, background-color .5s; }
+  .cg-form__submit:hover {
+    background-color: #db302c;
+    color: #ffffff; }
 
 .contact-form__input {
   width: 96%;
@@ -838,7 +861,8 @@ template {
   font-weight: 400;
   line-height: 24px;
   color: #000000;
-  border: 1px solid #000000; }
+  border: 1px solid #000000;
+  outline: none; }
   .contact-form__input::placeholder {
     color: #ababab; }
   .contact-form__input-group {
@@ -864,7 +888,9 @@ template {
   background-image: url("../img/polygon-1.png");
   background-position: 98% 50%;
   background-repeat: no-repeat;
-  margin: 0 0 22px 0; }
+  margin: 0 0 22px 0;
+  outline: none;
+  cursor: pointer; }
 
 .contact-form__textarea {
   resize: none;
@@ -878,7 +904,8 @@ template {
   border: 1px solid #000000;
   margin: 0 0 18px 0;
   padding: 2%;
-  width: 96%; }
+  width: 96%;
+  outline: none; }
   .contact-form__textarea::placeholder {
     color: #ababab; }
 
@@ -890,11 +917,16 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  border: none;
   display: block;
   margin-left: auto;
   margin-bottom: 32px;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: color .5s, background-color .5s; }
+  .contact-form__submit:hover {
+    background-color: #db302c;
+    color: #ffffff; }
 
 .wpcf7-form p {
   margin: 0; }
@@ -1332,7 +1364,7 @@ ul.slick-dots {
     font-family: "Eurostile LT Std - Demi", sans-serif;
     font-size: 32px;
     font-weight: 400;
-    margin: 42px 0 22px; }
+    margin: 40px 0 10px; }
     @media (max-width: 800px) {
       .contact-gallery__title {
         text-align: center; } }
@@ -1404,7 +1436,7 @@ ul.slick-dots {
       align-items: center; }
     .contact-gallery__gallery__item {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       border: 1px solid #ffffff;
       max-width: 130px; }
       @media (max-width: 1280px) {
