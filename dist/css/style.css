@@ -911,7 +911,9 @@ template {
       font-size: 20px;
       font-weight: 400;
       line-height: 26px;
-      padding: 24px 30px; }
+      padding: 24px 38px 24px 18px;
+      margin-top: 12px;
+      margin-bottom: 9px; }
   .my-slick__item__com-author {
     font-family: "Helvetica", sans-serif;
     font-style: oblique;
@@ -938,7 +940,8 @@ template {
 
 ul.slick-dots {
   position: initial;
-  padding-bottom: 26px; }
+  padding-bottom: 26px;
+  padding-top: 17px; }
 
 .find-franchise {
   height: 130px;
