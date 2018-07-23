@@ -723,8 +723,12 @@ template {
   margin-bottom: 20px;
   cursor: pointer;
   padding: 0;
-  border: none;
-  outline: none; }
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: color .5s, background-color .5s; }
+  .cg-contact-button:hover {
+    background-color: #db302c;
+    color: #ffffff; }
   @media (max-width: 800px) {
     .cg-contact-button {
       display: block;
@@ -803,7 +807,7 @@ template {
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
   padding-left: 10px;
-  background-image: url("../img/select-arrow.svg");
+  background-image: url("../img/polygon-1.png");
   background-position: 98% 50%;
   background-repeat: no-repeat;
   margin: 0 0 24px 0;
@@ -1543,7 +1547,7 @@ ul.slick-dots {
 
 .service__content {
   width: 1200px;
-  margin: 27px auto 20px;
+  margin: 27px auto 7px;
   display: flex; }
   @media (max-width: 1280px) {
     .service__content {
@@ -1560,7 +1564,7 @@ ul.slick-dots {
   font-family: "Eurostile LT Std - Demi", sans-serif;
   font-size: 34px;
   font-weight: 400;
-  margin: 0; }
+  margin: 3px 0 14px; }
   @media (max-width: 800px) {
     .service__title {
       margin-top: 10px;
@@ -1603,7 +1607,7 @@ ul.slick-dots {
 
 .franchising__content {
   width: 1200px;
-  margin: 27px auto 20px; }
+  margin: 27px auto 31px; }
   @media (max-width: 1280px) {
     .franchising__content {
       width: 90%; } }
