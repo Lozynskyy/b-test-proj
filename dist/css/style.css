@@ -803,7 +803,7 @@ template {
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
   padding-left: 10px;
-  background-image: url("../img/polygon-1.png");
+  background-image: url("../img/select-arrow.svg");
   background-position: 98% 50%;
   background-repeat: no-repeat;
   margin: 0 0 24px 0;
@@ -1438,7 +1438,8 @@ ul.slick-dots {
       display: block;
       margin-bottom: 24px;
       border: 1px solid #ffffff;
-      max-width: 130px; }
+      max-width: 130px;
+      cursor: pointer; }
       @media (max-width: 1280px) {
         .contact-gallery__gallery__item {
           margin-right: 10px; } }
