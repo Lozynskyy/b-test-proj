@@ -659,10 +659,14 @@ template {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 34px auto;
+  margin: 35px auto 37px;
   cursor: pointer;
   padding: 0;
-  border: none; }
+  border: none;
+  transition: color 0.5s, background-color 0.5s; }
+  .services-button:hover {
+    background-color: #db302c;
+    color: #ffffff; }
 
 .ln-button {
   width: 238px;
@@ -1069,7 +1073,10 @@ ul.slick-dots {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    transition: background-color 0.5s; }
+    .services__item__icon__circle:hover {
+      background-color: rgba(219, 48, 44, 0.7); }
   .services__item__title {
     color: #000000;
     font-family: "Eurostile LT Std - Demi", sans-serif;
@@ -1090,7 +1097,8 @@ ul.slick-dots {
         display: none; } }
   .services__item__link {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    transition: color 0.5s; }
     .services__item__link:hover {
       color: #db302c; }
     .services__item__link--image {
