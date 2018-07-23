@@ -625,7 +625,11 @@ template {
   margin-left: 10px;
   cursor: pointer;
   padding: 0;
-  border: none; }
+  border: 1px solid #db302c;
+  transition: background-color 0.5s, color 0.5s; }
+  .ff-button:hover {
+    background-color: #ffffff;
+    color: #db302c; }
   .ff-button--fr {
     width: 243px;
     height: 70px; }
@@ -721,14 +725,15 @@ template {
 
 .ff-input {
   width: 241px;
-  height: 54px;
+  height: 52px;
   background-color: #ffffff;
   border: 1px solid #b7b7b7;
   padding: 0 0 0 18px;
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 30px; }
+  margin-left: 30px;
+  outline: none; }
   .ff-input::placeholder {
     color: #bababa; }
   @media (max-width: 800px) {
@@ -962,8 +967,11 @@ ul.slick-dots {
       @media (max-width: 560px) {
         .find-franchise__content__item--left {
           margin-bottom: 10px; } }
+  .find-franchise__icon {
+    padding-bottom: 13px; }
   .find-franchise__text {
-    padding-left: 23px; }
+    padding-left: 23px;
+    padding-bottom: 4px; }
     @media (max-width: 800px) {
       .find-franchise__text {
         padding-left: 10px; } }
@@ -972,6 +980,7 @@ ul.slick-dots {
       font-family: "Eurostile LT Std - Demi", sans-serif;
       font-size: 38px;
       font-weight: 400;
+      line-height: 38px;
       margin: 0; }
       @media (max-width: 1280px) {
         .find-franchise__text__top {
